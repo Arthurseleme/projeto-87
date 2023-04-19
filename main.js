@@ -1,22 +1,22 @@
 var canvas = new fabric.Canvas('myCanvas');
 
- blockY=1;
- blockX=1;
+ block_y=1;
+ block_x=1;
 
-blockImageWidth = 350;
-blockImageHeight = 430;
+block_Image_Width = 350;
+block_Image_Height = 430;
 
-var blockImageObject= "";
+var block_Image_Object= "";
 
-function newImage(getImage)
+function new_image(get_image)
 {
 	fabric.Image.fromURL (get_image, function(Img)   
 	{
-	block_image_object = Img; 
+	block_Image_Object = Img; 
 
- 	block_Image_Object.scaleToWidth(block_image_width);
-	block_Image_Object.scaleToHeight(block_image_height);
-	block_image_object.set({
+ 	block_Image_Object.scaleToWidth(block_Image_Width);
+	block_Image_Object.scaleToHeight(block_Image_Height);
+	block_Image_Object.set({
 		top:block_y,
 		left:block_x
 	});
@@ -36,13 +36,13 @@ console.log(keyPressed);
 	if(keyPressed == '69') 
 	{
 		new_image('rr1.png'); 
-		console.log("r")
-	}
+		console.log("e")
+	}			
 	if(keyPressed == '86')
 	{
 		new_image('gr.png')
 		console.log("v")
-		blockX = 200;
+		block_x = 200;
 	
 	}
 	
@@ -50,20 +50,20 @@ console.log(keyPressed);
 	{
 		new_image('yr.png')
 		console.log("a")
-		blockX =350;
+		block_x =350;
 		
 	}
-	if(keyPressed == '82')
+	if(keyPressed == '82'){
 		new_image('pr.png')
-		console.log("p")
-		blockX = 600;
-		
+		console.log("r")
+		block_x = 600;
+	}
 	
 	if(keyPressed == '73')
 	{
 		new_image("br.png")
-		console.log("b")
-		blockX = 700;
+		console.log("i")
+		block_x = 700;
 	
 	}
 	
